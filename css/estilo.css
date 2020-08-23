@@ -1,0 +1,108 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: url(../imgs/bea7bc1e4dd7ac8f0617c7a4eb036db5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* ======Cabecalho======= */
+
+.cabecalho__sombra{
+	width: 100%;
+	background: rgba(26, 26, 26, 0.4);
+}
+.cabecalho__caixa{	
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.cabecalho__logo{
+	max-width: 300px;
+	margin-left: 10em;
+
+}
+.cabecalho__botao{
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 1.1rem;
+
+	background: rgba(39, 49, 65, 0.9);
+
+	
+	position: absolute;
+	top: 22px;
+	right: 0;
+	padding: 13px;
+	border-radius: 20px;
+    
+}
+.cabecalho__botao:hover{
+	font-size: 1.15rem;
+	transition: 1s;
+}
+
+/* ====== Main ======== */
+/* ======= conteudo ====== */
+.conteudo{
+	height: 500px ;
+	padding: 30px;
+	margin-bottom: 100px;
+	margin-top: 40px;
+	
+}
+.conteudo__caixa{
+	width: 700px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	left: 50%; top: 10%;
+	transform: translate(-50%, -10%) ;
+	
+}
+.caixa__titulo{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	margin-bottom: 50px; 	
+}
+
+.caixa__video{
+	width: 690px;
+	height: 380px;
+	position: relative;
+	border-radius: 1px;
+	box-shadow: 1px 2px 1px 1px rgb(0, 0, 0);
+}
+.caixa__subtitulo{
+	color: #fff;
+	font-size: 1.8rem;
+	margin-top: 50px;
+}
+.arrow{
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 150px;
+}
+/* ====== Sobre ======= */
+.sobre{
+	padding: 0 10%;
+	
+}
+.sobre__caixa{
+	text-align: center;
+	height: 500px;
+	background: rgba(204, 204, 204, 0.8);
+	border: 3px solid #999999;
+	box-shadow: 2px 2px 10px #000 inset;
+}
+.sobre__knife{
+	width: 200px;
+	transform: rotate(220deg);
+	position: relative;
+	bottom: 30px;
+}
