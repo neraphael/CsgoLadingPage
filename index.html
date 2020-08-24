@@ -6,33 +6,110 @@
 	<title>Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="../csgoweb/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../csgoweb/css/estilo.css">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<header class="cabecalho">
 		<div class="cabecalho__sombra">
-			<div class="cabecalho__caixa">
-				<img class="cabecalho__logo" src="../csgoweb/imgs/csgopngg.webp">
-				<a class="cabecalho__botao" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese">Jogue Agora</a>
+			<div class="cabecalho__topo">
+				<img class="topo__logo" src="./imgs/SeekPng.com_csgo-png_222004.png" alt="">
+				<a class="topo__botao" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese">Jogue Agora</a>
 			</div>
 		</div>
 	</header>
 	<main class="main" >
 		<section class="conteudo">
 			<div class="conteudo__caixa">
-				<h1 class="caixa__titulo">Confira o trailer de CS GO</h1>
-				<iframe class="caixa__video" width="" height="" src="https://www.youtube.com/embed/edYCtaNueQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2 class="caixa__subtitulo">Saiba Mais</h2>
+				<iframe class="caixa__video" width="690" height="380" src="https://www.youtube.com/embed/edYCtaNueQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
-		<div class="arrow">
-			<img class="arrow__img" src="./imgs/arrow_down_download_save_icon_123720.png" alt="">
-		</div>
 		<section class="sobre">
+			<h2 class="subtitulo">Novo Counter Strike!</h2>
 			<div class="sobre__caixa">
-				<img class="sobre__knife" src="./imgs/pngaaa.com-852935.png" alt="">
+				<div class="caixa__texto">
+					<p>
+						O <strong>Counter-Strike: Global Offensive</strong> (CS:GO) é a continuação do jogo de equipes 
+						cheio de ação que foi pioneiro quando foi lançado há 12 anos atrás.					
+					</p>
+					<p>
+						O <strong>CS: GO</strong> apresenta-se com novos mapas, personagens, armas e ainda oferece versões 
+						atualizadas de conteúdo do CS clássico (de_dust, etc.). Para além disso, o CS:GO introduz 
+						novos modos de jogo, matchmaking, tabelas de classificação e muito mais.
+					</p>
+				</div>
+				<h2 class="subtitulo">Mapas</h2>
+				<ul class="slider">
+					<li>
+						<input type="radio" id="slide1" name="slide" checked>
+						<label for="slide1"></label>
+						<p>Cache</p>
+						<img src="./imgs/800px-CSGO_Cache_2019_rework.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide2" name="slide">
+						<label for="slide2"></label>
+						<p>Cobblestone</p>
+						<img src="./imgs/800px-Csgo_cobblestone.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide3" name="slide">
+						<label for="slide3"></label>
+						<p>Vertigo</p>
+						<img src="./imgs/800px-Csgo_de_vertigo_new.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide4" name="slide">
+						<label for="slide4"></label>
+						<p>Dust II</p>
+						<img src="./imgs/800px-Csgo_dust2.0.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide5" name="slide">
+						<label for="slide5"></label>
+						<p>Mirage</p>
+						<img src="./imgs/800px-Csgo_mirage.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide6" name="slide">
+						<label for="slide6"></label>
+						<p>Overpass</p>
+						<img src="./imgs/800px-Csgo_overpass.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide7" name="slide">
+						<label for="slide7"></label>
+						<p>Canals</p>
+						<img src="./imgs/800px-De_canals_large.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide8" name="slide">
+						<label for="slide8"></label>
+						<p>Inferno</p>
+						<img src="./imgs/800px-De_new_inferno.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide9" name="slide">
+						<label for="slide9"></label>
+						<p>Nuke</p>
+						<img src="./imgs/800px-Nuke_csgo.jpg" alt="">
+					</li>
+					<li>
+						<input type="radio" id="slide10" name="slide">
+						<label for="slide10"></label>
+						<p>Train</p>
+						<img src="./imgs/800px-Train_csgo.jpg" alt="">
+					</li>
+				</ul>
 			</div>
 		</section>
 	</main>
+	<footer class="rodape"> 
+		<img  src="./imgs/footer_esrb_big.jpg" alt="">
+		<img  src="./imgs/footer_valve.png" alt="">
+		<img  src="./imgs/footer_source.png" alt="">
+		<img  src="./imgs/footer_steam.png" alt="">
+	</footer>
 </body>
 </html>
