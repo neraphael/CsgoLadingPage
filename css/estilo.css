@@ -10,12 +10,16 @@ strong{
 	font-weight: bold;
 }
 /* ======Cabecalho======= */
-
+.preenchido{
+	height: 74px;
+}
 .cabecalho{
+	position: fixed;
 	width: 100%;
 	height: auto;
 	background: #1d1d1d;
 	box-shadow: 0 0 3px #000;
+	z-index: 20;
 }
 .cabecalho__topo{	
 	position: relative;
@@ -25,6 +29,7 @@ strong{
 	margin: 0 auto;
 	text-align: center;
 	vertical-align: middle;
+
 }
 .topo__logo{
 	width: 150px;
@@ -42,19 +47,16 @@ strong{
 
 	float: right;
 	margin-top: 1.1rem;
-	border: 2px solid #fff;
+	border-bottom: 2px solid #fff;
 	padding: 0.5rem;
 }
-/* ====== Main ======== */
-
-
-.bloco__titulos{
-	color: rgb(0, 0, 0);
-	font-weight: bold;
-	font-size: 2rem;
+.topo__botao:hover{
+	color: #fb0;
+	border-bottom: 2px solid #fb0;
 }
+
 /* ======= conteudo ====== */
-.conteudo{
+.principal{
 	width: 100%;
 	padding: 5rem 0;
 	text-align: center;
@@ -62,21 +64,68 @@ strong{
 	/* border: 1px solid #000 */
 	/* box-shadow: 0 0px 10px #000; */ 
 }
-.conteudo__caixa{
+.principal__conteudo{
 	margin: 0 auto;
-	width: 900px;
-	padding: 10px;
+	width: 690px;
+	/* padding: 10px; */
 	text-align: center;
 	position: relative;
+	box-shadow: 0px 0px 10px #000;
+
 }
-.caixa__video{
+.conteudo__video{
 	max-width: 100%;
 	max-height: 100%;
 	
 	position: relative;
-	border-radius: 3px;
+	border-radius: 0 0 3px 3px;
 	box-shadow: 0px 0px 10px #000;
 	border-bottom: 1px solid #222;
+}
+.conteudo__titulo{
+	margin: 0 auto;
+	width: 688px;
+	color: #fff;
+	font-size: 1.3rem;
+
+	background: #1d1d1d;
+	padding: 30px 0;
+	box-shadow: 0px 0px 10px #000;
+	border: 1px solid #222;
+	border-radius: 3px 3px 0 0;
+}
+
+/* ====== Sobre ======= */
+.sobre{
+	height: 2000px;
+	width: 100%;
+	background: #fdfdfd;
+	text-align: center;
+	padding: 4rem 0;
+	box-shadow: 0 0 2px #000;
+}
+.sobre__caixa{
+	width: 80%;
+	margin: 0 auto;
+}
+.caixa__texto{
+	width: 80%;
+	padding: 3rem 6rem;
+	text-align: justify;
+	line-height: 2rem;
+}
+.caixa__texto p{
+	font-size: 1.3rem;
+	margin-top: 1.7rem;
+	text-indent: 2em;
+}
+.subtitulo{
+	font-family: 'Russo One', sans-serif;
+	letter-spacing: 5px;
+	color: #232F3F;
+	font-size: 2.1rem;
+	font-weight: 700;
+	
 }
 .slider{
 	display: block;
@@ -86,7 +135,7 @@ strong{
 	margin-top: 20px;
 	position: relative;
 	text-align: center;
-	box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 5px #000;
 }
 .slider li{
 	list-style: none;
@@ -97,6 +146,23 @@ strong{
 	height: 100%;
 	width: 100%;
 	vertical-align: top;
+
+	width: 800px;
+	height: 450px;
+	opacity: 0;
+	visibility: hidden;
+}
+.slider p{
+	position: absolute;
+	bottom: 0;
+	left: 0; right: 0;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 1.5rem;
+	opacity: 0;
+	visibility: hidden;
 }
 .slider input{
 	display: none;
@@ -143,24 +209,7 @@ strong{
 .slider li:nth-child(10) label {
 	left: 750px;
 }
-.slider p{
-	position: absolute;
-	bottom: 0;
-	left: 0; right: 0;
-	font-size: 1.6rem;
-	font-weight: 600;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.5);
-	padding: 1.5rem;
-	opacity: 0;
-	visibility: hidden;
-}
-.slider img {
-	width: 800px;
-	height: 450px;
-	opacity: 0;
-	visibility: hidden;
-}
+
 .slider li input:checked ~ img{
 	opacity: 1;
 	visibility: visible;
@@ -173,44 +222,85 @@ strong{
 	z-index: 10;
 	transition: 0.5s;
 }
+/* =========== Prime ========== */
 
-
-/* ====== Sobre ======= */
-.sobre{
-	height: 1200px;
-	width: 100%;
-	background: #fff;
-	text-align: center;
-}
-.sobre__caixa{
+.prime{
+	text-align: left;
 	width: 80%;
 	margin: 0 auto;
+	margin-top: 150px;
 }
-.caixa__texto{
-	width: 80%;
-	padding: 3rem 6rem;
-	text-align: justify;
-	line-height: 2rem;
+.prime__img{
+	width: 100px;
+	vertical-align: middle;
+	position: relative;
+	z-index: 10;
 }
-.caixa__texto p{
-	font-size: 1.3rem;
-	margin-top: 1.7rem;
-}
-.subtitulo{
+.prime__titulo{
 	font-family: 'Russo One', sans-serif;
-	letter-spacing: 5px;
-	color: #232F3F;
-	font-size: 2.1rem;
-	font-weight: 700;
-	padding-top: 2rem;
+	display: inline-block;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	background: linear-gradient(270deg,#04C6FA, #1C68E3, #1D66E3);
+	letter-spacing: 3px;
+
+	position: relative;
+	right: 30px; top: 5px;
+	border-radius: 0 20px 20px 0;
 }
+
+
+.texto__titulo{
+	text-align: left;
+	font-size: 1.6rem;
+	color: #232F3F;
+	font-weight: 700;
+	margin: 2rem 0 1rem 4rem;
+	letter-spacing: 3px;
+}
+
+.texto__um, .texto__dois, .texto__tres{
+	width: calc(50% - 1.3rem);
+	text-align: justify;
+	display: inline-block;
+}
+.texto__um{
+	padding-right: 2rem;
+}
+.texto__dois, .texto__tres{
+	position: relative;
+	top: 10rem;
+}
+.texto__dois a{
+	color: #fa0;
+	text-decoration: none;
+}
+.texto__dois a:hover{
+	text-decoration: underline;
+}
+.texto__tres{
+	position: relative;
+}
+.texto__um p, .texto__dois p, .texto__tres p{
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+	margin-top: 1rem;
+	text-indent: 1.5em;
+	float: left;
+	
+}
+
 
 /* ======== Rodape ========= */
 .rodape{
 	height: 90px;
 	background: #1d1d1d;
 	text-align: center;
-	box-shadow: 0 0 3px #000;
+	box-shadow: 0 0 5px #000;
+	
 }
 .rodape img{
 	margin: 0 20px 0 20px;
