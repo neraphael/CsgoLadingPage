@@ -97,7 +97,7 @@ strong{
 
 /* ====== Sobre ======= */
 .sobre{
-	height: 2000px;
+	height: auto;
 	width: 100%;
 	background: #fdfdfd;
 	text-align: center;
@@ -110,13 +110,14 @@ strong{
 }
 .caixa__texto{
 	width: 80%;
-	padding: 3rem 6rem;
+	margin: 0 auto;
+
 	text-align: justify;
 	line-height: 2rem;
 }
 .caixa__texto p{
 	font-size: 1.3rem;
-	margin-top: 1.7rem;
+	margin-top: 1.7rem; margin-bottom: 1.7rem;
 	text-indent: 2em;
 }
 .subtitulo{
@@ -125,13 +126,17 @@ strong{
 	color: #232F3F;
 	font-size: 2.1rem;
 	font-weight: 700;
-	
+	padding-top: 1rem;	
+}
+.bloco{
+	width: 100%;
+	height: 500px;
 }
 .slider{
 	display: block;
 	height: 450px;
 	width: 800px;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: 20px;
 	position: relative;
 	text-align: center;
@@ -180,35 +185,36 @@ strong{
 	border-radius: 50%;
 }
 .slider li:nth-child(1) label {
-	left: 30px;
+    left: 30px;
 }
 .slider li:nth-child(2) label {
-	left: 110px;
+    left: 110px;
 }
 .slider li:nth-child(3) label {
-	left: 190px;
+    left: 190px;
 }
 .slider li:nth-child(4) label {
-	left: 270px;
+    left: 270px;
 }
 .slider li:nth-child(5) label {
-	left: 350px;
+    left: 350px;
 }
 .slider li:nth-child(6) label {
-	left: 430px;
+    left: 430px;
 }
 .slider li:nth-child(7) label {
-	left: 510px;
+    left: 510px;
 }
 .slider li:nth-child(8) label {
-	left: 590px;
+    left: 590px;
 }
 .slider li:nth-child(9) label {
-	left: 670px;
+    left: 670px;
 }
 .slider li:nth-child(10) label {
-	left: 750px;
+    left: 750px;
 }
+
 
 .slider li input:checked ~ img{
 	opacity: 1;
@@ -270,10 +276,7 @@ strong{
 .texto__um{
 	padding-right: 2rem;
 }
-.texto__dois, .texto__tres{
-	position: relative;
-	top: 10rem;
-}
+
 .texto__dois a{
 	color: #fa0;
 	text-decoration: none;
@@ -287,10 +290,9 @@ strong{
 .texto__um p, .texto__dois p, .texto__tres p{
 	font-size: 1.4rem;
 	line-height: 2.2rem;
-	margin-top: 1rem;
+	margin: 1rem 0 2rem 0;
 	text-indent: 1.5em;
 	float: left;
-	
 }
 
 

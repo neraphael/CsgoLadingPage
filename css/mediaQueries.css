@@ -1,0 +1,65 @@
+@media screen and (max-width:960px){
+    .sobre__caixa{
+        width: 90%;
+    }
+    .caixa__texto{
+        padding: 3rem 3rem;
+    }
+}
+@media screen and (max-width: 840px){
+    .slider{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .slider img{
+        width: 100%;
+       
+        height: 400px;
+    }
+    .prime{
+        margin-top: 500px;
+    }
+    .slider li:nth-child(1) label {
+        left: 10%;
+    }
+    .slider li:nth-child(2) label {
+        left: 18%;
+    }
+    .slider li:nth-child(3) label {
+        left: 26%;
+    }
+    .slider li:nth-child(4) label {
+        left: 34%;
+    }
+    .slider li:nth-child(5) label {
+        left: 42%;
+    }
+    .slider li:nth-child(6) label {
+        left: 50%;
+    }
+    .slider li:nth-child(7) label {
+        left: 58%;
+    }
+    .slider li:nth-child(8) label {
+        left: 66%;
+    }
+    .slider li:nth-child(9) label {
+        left: 74%;
+    }
+    .slider li:nth-child(10) label {
+        left: 82%;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .principal__conteudo,
+    .conteudo__video,
+    .conteudo__titulo{
+        width: 100%;
+      
+    }
+    .rodape img{
+        
+    }
+}
