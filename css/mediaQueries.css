@@ -57,9 +57,43 @@
     .conteudo__video,
     .conteudo__titulo{
         width: 100%;
-      
     }
-    .rodape img{
-        
+    .texto__um, .texto__dois, .texto__tres{
+        float: none;
+        width: 100%; 
+    }
+    .rodape{
+        height: auto;
+    }
+}
+@media screen and (max-width:430px){
+    .cabecalho{
+        text-align: center;
+    }
+    .cabecalho__topo{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding:0;
+    }
+    .topo__logo{
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .topo__botao{
+        display: block;
+        width: 100%;
+        position: static;
+    }
+    .prime{
+        text-align: center;
+    }
+    .prime__titulo{
+        position: unset;
+        border-radius: 20px;
+    }
+    .texto__titulo{
+        margin-left: 0;
     }
 }
